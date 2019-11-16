@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor de monedas</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+        <div class="container-fluid">
+                <h1>Conversor</h1>
+                <div class="row">
+            
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <header>
+                                    <h2><b>Ingrese la cantidad a convertir y la moneda base</b></h2>
+                                </header>
+            
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <label for="cantidad">Cantidad</label>
+                                        <input type="text" class="form-control" id="cantidad" placeholder="Ingrese la cantidad" name="cantidad" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="moneda">Moneda</label>
+                                        <select  class="form-control" name="moneda" id="moneda">
+                                            <option value="USD">USD</option>
+                                            <option value="EUR">EUR</option>
+                                            <option value="COP">COP</option>
+                                            <option value="JPY">JPY</option>
+                                        </select>
+                                    </div>
+                                </form>
+                                <button type="" id="convertir" class="btn btn-primary">Convertir</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-8 d-none" id="resultado">
+                            <div class="card-group">
+                                    <div class="card">
+                                      <img class="card-img-top" src="assets/img/dolar.jpg" alt="Card image cap">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Dolar</h5>
+                                        <p class="card-text">La tasa representativa para el dolar es <span id="tasa_dolar"></span>.</p>
+                                        <p class="card-text">la conversión total es <span id="valor_dolar"></span>.</p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted fecha"></small>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <img class="card-img-top" src="assets/img/euro.jpg" alt="Card image cap">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Euro</h5>
+                                        <p class="card-text">La tasa representativa para el euro es <span id="tasa_euro"></span>.</p>
+                                        <p class="card-text">la conversión total es <span id="valor_euro"></span>.</p>
+                                    </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted fecha"></small>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <img class="card-img-top" src="assets/img/pesoc.jpg" alt="Card image cap">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Peso Col</h5>
+                                        <p class="card-text">La tasa representativa para el peso es <span id="tasa_peso"></span>.</p>
+                                        <p class="card-text">la conversión total es <span id="valor_peso"></span>.</p>
+                                    </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted fecha"></small>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div> 
+                </div>
+            </div>
+            <footer>
+                    Creado por Carlos Steeven Jaramillo
+                </footer>
+                
+                <script src="assets/jquery/js/jquery-3.4.1.min.js" ></script>
+                <script src="assets/bootstrap/js/popper.min.js"></script>
+                <script src="assets/bootstrap/js/bootstrap.min.js" ></script>
+                <script src="assets/js/site.js"></script>
+
+            
+    
+</body>
+</html>
